@@ -1,0 +1,29 @@
+.\" shorthand for double quote that works everywhere.
+.ds q \N'34'
+.TH XENGFX__drivermansuffix__ __vendorversion__
+.SH NAME
+xengfx \- video driver for xengfx device
+.SH SYNOPSIS
+.nf
+.B "Section \*qDevice\*q"
+.BI "  Identifier \*q"  devname \*q
+.B  "  Driver \*qxengfx\*q"
+.BI "  BusID  \*qpci:" bus : dev : func \*q
+\ \ ...
+.B EndSection
+.fi
+.SH DESCRIPTION
+.B xengfx
+is an __xservername__ driver for xengfx devices.
+.SH SUPPORTED HARDWARE
+The 
+.B modesetting
+driver supports only xengfx devices.
+.SH CONFIGURATION DETAILS
+Please refer to __xconfigfile__(__filemansuffix__) for general configuration
+details.
+.SH "SEE ALSO"
+__xservername__(__appmansuffix__), __xconfigfile__(__filemansuffix__), Xserver(__appmansuffix__),
+X(__miscmansuffix__)
+.SH AUTHORS
+Authors include: Aurelien Chartier
